@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans+Condensed:wght@300&family=Titillium+Web&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <div id="div-top"></div>
+    <div class="landing">
+        <div class="info">
+            <p><h1>[EBOOK] Construindo Landing pages com HTML & CSS</h1></p>
+            <p><h2>Dê os seus primeiros passos no mundo do</h2></p>
+            <p><h1>desenvolvimento web!</h1></p>
+            <img src="imgs/app-icon.png" alt="" width="300" height="300">
+        </div>
+        <div class="download">
+            <p><h2 id="title">Faça o download grátis</h2></p>
+            <p><h2 id="sub-title" class="comments">Preencha o formulário abaixo para fazer o download</h2></p>
+            <form action="">
+                <p class="comments">Nome*</p>
+                <input type="text" placeholder="Insira o seu nome">
+                <p class="comments">Email*</p>
+                <input type="text" placeholder="Insira o seu email">
+                <img src="imgs/" alt="">
+                <p class="comments">Profissionalmente, você se considera:*</p>
+                <select name="question1" id="question1">
+                    <option value="nulo"></option>
+                    <option value="pleno">Pleno</option>
+                    <option value="ascensao">Em ascensão</option>
+                    <option value="estagnado">Estagnado</option>
+                    <option value="iniciante">Iniciante</option>
+                </select>
+                <p class="comments">Qual é o seu objetivo?*</p>
+                <select name="question2" id="question2">
+                    <option value="nulo"></option>
+                    <option value="desenvolvimento">Desenvolvimento profissional</option>
+                    <option value="migracao">Migração de área</option>
+                    <option value="amadorismo">Amadorismo</option>
+                </select>
+                <p class="comments">Você possui o interesse de iniciar um curso online?*</p>
+                <input type="radio" id="sim" name="interesse" value="sim">
+                <label for="sim">Sim</label>
+                <input type="radio" id="nao" name="interesse" value="nao">
+                <label for="nao">Não</label><br>
+                <input type="submit" name="" value="Download">
+                <p><h4 class="comments">Prometemos não utilizar suas informações de contato para enviar qualquer tipo de SPAM.</h4></p>
+            </form>
+        </div>
+    </div>
+    <div id="div-bottom"></div>
+</body>
+</html>

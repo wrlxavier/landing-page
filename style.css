@@ -1,0 +1,258 @@
+/*  
+    Famílias de fontes...
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #3f51b5;
+    color: whitesmoke;
+}
+
+
+#div-top, #div-bottom{
+    background-color: #3f51b5;
+    height: 80px;
+}
+
+/*
+    Opção para tarja superior e inferior
+
+#elem-top, #elem-bottom{
+    background-color: #40a6f2;
+}
+
+#elem-top{
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+#elem-bottom{
+    box-shadow: 0px -10px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+*/
+
+.landing{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    height: 600px;
+    width: 100%;
+}
+
+.info{
+    text-align: center;
+    width: 500px;
+}
+
+.info h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+.info h2{
+    font-size: 20px;
+    color: #40a6f2;
+    margin: 20px 0;
+    letter-spacing: -1px;
+    line-height: 1em;
+}
+
+.info img{
+    border-radius: 50%;
+    margin-top: 40px;
+    transition: 0.5s;
+}
+
+.info img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.download{
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-left: 20px;
+    background-color: #283593;
+    border-radius: 20px;
+    width: 500px;
+}
+
+#title{
+    margin-top: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#sub-title{
+    text-align: center;
+}
+
+.download form{
+    margin: 20px 30px;
+}
+
+.comments{
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.download input, select{
+    height: 30px;
+    padding: 0 20px;
+    color: whitesmoke;
+}
+
+.download input[type="text"]{
+    background-color: #3f51b5;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+}
+
+.download select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 70%;
+    border: none;
+    border-radius: 20px 20px 0px 20px;
+    background-image: url(imgs/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: right;
+    background-position-x: 95%;
+    background-color: #3f51b5;
+}
+
+.download input[type="radio"]{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.download label{
+    margin-right: 30px;
+}
+
+.download input[type="submit"]{
+    margin-top: 10px;
+    width: 60%;
+    height: 40px;
+    margin-left: 85px;
+    background-color: whitesmoke;
+    color: gray;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.download input[type="submit"]:hover{
+    background-color: #ff5252;
+    color: whitesmoke;
+    transition: 0.2s;
+}
+
+.download h4{
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+@media (max-width: 1120px){
+    .landing{
+        height: 1200px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .download{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 555px){
+    .info, .download{
+        width: 90%;
+    }
+    .info img{
+        width: 50%;
+        height: auto;
+    }
+    .download input[type="submit"]{
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 325px){
+    .download{
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 265px){
+    .info h1{
+        font-size: 20px;
+    }
+    .info h2{
+        font-size: 15px;
+    }
+}
+
+@media (orientation: landscape) and (min-height: 900px){
+    .landing{
+        margin: 150px 0;
+    }
+}
+
+@media (orientation: landscape) and (min-height: 1000px){
+    .landing{
+        margin: 200px 0;
+    }
+}
+
+@media (orientation: landscape) and (min-height: 1100px){
+    .landing{
+        margin: 250px 0;
+    }
+}
+
+@media (orientation: landscape) and (min-height: 1200px){
+    .landing{
+        margin: 300px 0;
+    }
+}
+
+@media (orientation: landscape) and (min-height: 1300px){
+    .landing{
+        margin: 350px 0;
+    }
+}
+
+@media (orientation: landscape) and (min-height: 1400px){
+    .landing{
+        margin: 400px 0;
+    }
+}
+
+@media (orientation: landscape) and (min-height: 1500px){
+    .landing{
+        margin: 450px 0;
+    }
+}
